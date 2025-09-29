@@ -1,6 +1,28 @@
 # Crear variables con diferentes tipos de datos en Python 
 # y realizar conversiones entre ellos.
 
+#Se pueden declarar las variables directamente sin especificar el tipo de dato
+# Python es un lenguaje de tipado dinámico
+
+nombre = "Paco"
+apellido = "Gutiérrez"
+edad = 47
+estatura = 1.72
+es_programador = True
+
+print("Nombre:", nombre + " " + apellido)
+print("Edad:", edad)
+print("Estatura:", estatura)        
+print("¿Es programador?:", es_programador)
+
+
+#Tambien se pueden usar las funciones de conversión de tipos de datos
+# Convertir a cadena de texto (str) o simplemente definir la variable como texto
+#Aqui se define saludo como texto(string) y se concatena con las variables nombre y apellido
+
+saludo = str("Hola, " + nombre + " " + apellido)
+print(saludo)
+
 
 # Convertir a entero (int)
 numero_entero = int(12.5)      # 12 (trunca la parte decimal)
