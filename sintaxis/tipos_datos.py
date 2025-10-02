@@ -5,8 +5,9 @@
 # evitar caracteres especiales: ñ, acentos, símbolos
 # si es constante lo solemos poner en MAYUSCULAS
 
-
+print("=" * 20)
 print("NÚMEROS ENTEROS")
+print("=" * 20)
 
 edad = 20
 temperatura_bajo_cero = -15
@@ -21,7 +22,9 @@ print(f"Números grande: {numeros_grande}")
 print(f"Números grande + 1: {numeros_grande +1}")
 
 print("\n")
+print("=" * 20)
 print("NÚMEROS DECIMALES (FLOAT)")
+print("=" * 20)
 print("\n")
 
 altura = 1.75
@@ -42,7 +45,9 @@ print(f"Parte imaginaria: {complejo.imag}")
 print(f"Módulo: {abs(complejo)}")
 
 print("\n")
+print("=" * 20)
 print("OPERACIONES BÁSICAS CON NÚMEROS")
+print("=" * 20)
 print("\n")
 
 suma = 5 + 3
@@ -68,7 +73,9 @@ redondeo_decimal = round(3.14159, 2)
 print(f"Redondeo decimal: {redondeo_decimal}")
 
 print("\n")
+print("=" * 20)
 print("CONVERSIONES ENTRE TIPOS DE DATOS")
+print("=" * 20)
 print("\n")
 
 edad_aproximada = int(47.6)  # Convierte float a int (trunca)
@@ -81,7 +88,66 @@ cantidad = int("100") # Convierte str a int
 medida = float("1.75") # Convierte str a float
 print(f"Cantidad: {cantidad}") 
 print(f"Medida: {medida}")  
+
+print("\n")
+print("=" * 20)
+print("NÚMEROS ALEATORIOS")
+print("=" * 20)
+print("\n")
  
+import random
+dado = random.randint(1, 4) # Número entero aleatorio entre 1 y 4
+print(f"Tirar un dado de 4: {dado}") 
+print(f"Tirar un dado de 6: {random.randint(1, 6)}") 
+print(f"Tirar un dado de 8: {random.randint(1, 8)}") 
+print(f"Tirar un dado de 10: {random.randint(1, 10)}") 
+print(f"Tirar un dado de 12: {random.randint(1, 12)}") 
+print(f"Tirar un dado de 20: {random.randint(1, 20)}") 
+
+print("\n")
+print("=" * 20)
+print("TEXTO (STRING)")
+print("=" * 20)
+print("\n")
+
+nombre_simple = 'Paco'
+mensaje = "Hola, ¿cómo estás?"
+descripcion = """Este es un texto
+multilínea que abarca
+varias líneas."""
+
+print(f"Nombre simple: {nombre_simple}")
+print(f"Mensaje: {mensaje}")
+print(f"Descripción:\n{descripcion}")   
+
+palabra = "Python"
+print(f"Primera letra: {palabra[0]}")      # Primer carácter
+print(f"Última letra: {palabra[-1]}")      # Último carácter        
+print(f"Subcadena (1-4): {palabra[1:4]}")   # Subcadena desde índice 1 hasta 3
+print(f"Longitud: {len(palabra)}")          # Longitud de la cadena
+
+print("\n")
+print("=" * 20)
+print("MÉTODOS DE CADENAS")
+print("=" * 20)
+print("\n")
+
+print(f"Mayúsculas: {palabra.upper()}")      # Convertir a mayúsculas
+print(f"Minúsculas: {palabra.lower()}")      # Convertir a minúsculas
+print(f"Reemplazar: {palabra.replace('y', 'i')}") # Reemplazar 'y' por 'i'
+print(f"Buscar: {palabra.find('t')}")        # Buscar índice de 't'
+print(f"Contar: {palabra.count('o')}")       # Contar ocurrencias de 'o'
+print(f"Dividir: {mensaje.split(', ')}")     # Dividir por ', '
+print(f"Concatenar: {nombre_simple + ' ' + palabra}") # Concatenar cadenas
+print(f"F-string: {f'Hola, {nombre_simple}! Bienvenido a {palabra}.'}") # F-string
+print(f"Escape secuencias: {'Primera línea\nSegunda línea\tTabulado'}") # Secuencias de escape
+print("\n")
+
+frase = "Me encanta la sopa de letras"
+
+contiene_sopa = "sopa" in frase
+print(f"Frase: {frase}")
+print(contiene_sopa)  # True
 
 
 # tipos de datos numéricos
