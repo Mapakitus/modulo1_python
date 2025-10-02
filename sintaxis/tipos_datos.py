@@ -64,6 +64,26 @@ print(f"División entera: {division_entera}")
 print(f"Valor absoluto: {valor_absoluto}")
 
 
+redondeo_decimal = round(3.14159, 2)
+print(f"Redondeo decimal: {redondeo_decimal}")
+
+print("\n")
+print("CONVERSIONES ENTRE TIPOS DE DATOS")
+print("\n")
+
+edad_aproximada = int(47.6)  # Convierte float a int (trunca)
+print(f"Edad aproximada: {edad_aproximada}")
+
+precio_exacto = float(20) # Convierte int a float
+print(f"Precio exacto: {precio_exacto}")
+
+cantidad = int("100") # Convierte str a int
+medida = float("1.75") # Convierte str a float
+print(f"Cantidad: {cantidad}") 
+print(f"Medida: {medida}")  
+ 
+
+
 # tipos de datos numéricos
 age = 20
 height = 1.80
