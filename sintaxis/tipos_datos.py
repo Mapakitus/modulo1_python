@@ -5,6 +5,50 @@
 # evitar caracteres especiales: ñ, acentos, símbolos
 # si es constante lo solemos poner en MAYUSCULAS
 
+print("\n")
+print("=" * 20)
+print("TIPOS DE DATOS")
+print("=" * 20)
+print("\n")
+
+# tipos de datos numéricos
+age = 20
+height = 1.80
+price = 4.99
+print(price)
+
+# tipos de datos texto
+nombre = 'Alan'
+apellido = "Sastre"
+telefono_movil = '666555444'
+print(nombre + apellido)
+print(nombre + " " + apellido)
+
+# tipos de datos boolean
+is_student = True
+is_eligible = False
+
+# Constantes (por convención se escriben en mayúsculas, son variables que no cambian su valor)
+DESCUENTO = 10
+PI = 3.14
+IVA = 21
+DEFAULT_USERNAME = 'User'
+
+#Se pueden declarar las variables directamente sin especificar el tipo de dato
+# Python es un lenguaje de tipado dinámico
+
+nombre = "Paco"
+apellido = "Gutiérrez"
+edad = 47
+estatura = 1.72
+es_programador = True
+
+print("Nombre:", nombre + " " + apellido)
+print("Edad:", edad)
+print("Estatura:", estatura)        
+print("¿Es programador?:", es_programador)
+print("\n")
+
 print("=" * 20)
 print("NÚMEROS ENTEROS")
 print("=" * 20)
@@ -149,57 +193,47 @@ contiene_sopa = "sopa" in frase
 print(f"Frase: {frase}")
 print(contiene_sopa)  # True
 
+print("\n")
+print("=" * 20)
+print("FORMATEO DE CADENAS")
+print("=" * 20)
+print("\n")
 
-# tipos de datos numéricos
-age = 20
-height = 1.80
-price = 4.99
-print(price)
-
-# tipos de datos texto
-nombre = 'Alan'
-apellido = "Sastre"
-telefono_movil = '666555444'
-print(nombre + apellido)
-print(nombre + " " + apellido)
-
-# tipos de datos boolean
-is_student = True
-is_eligible = False
-
-calificacion = 9
-
-DESCUENTO = 10
-PI = 3.14
-IVA = 21
-DEFAULT_USERNAME = 'User'
-
-calificacion = 9
-
-telefono_movil = '666555444'
+nombre = "Ana"
+nombre = "Pedro"
+edad = 30   
+mensaje = f"Hola, {nombre}. Tienes {edad} años."
+print(mensaje)
 
 
-# Crear variables con diferentes tipos de datos en Python 
-# y realizar conversiones entre ellos.
+nombre = "Valeria"
+edad = 12
+mensaje = "Hola, {}. Tienes {} años.".format(nombre, edad)
+print(mensaje)
 
-#Se pueden declarar las variables directamente sin especificar el tipo de dato
-# Python es un lenguaje de tipado dinámico
+# Salto de línea
+print("Primera línea\nSegunda línea")
 
-nombre = "Paco"
-apellido = "Gutiérrez"
-edad = 47
-estatura = 1.72
-es_programador = True
+# Tabulación
+print("Nombre:\tJuan")
 
-print("Nombre:", nombre + " " + apellido)
-print("Edad:", edad)
-print("Estatura:", estatura)        
-print("¿Es programador?:", es_programador)
+# Comillas dentro de comillas
+print("Él dijo: \"Hola\"")
+print('Ella respondió: \'Adiós\'')
+
+# Barra invertida
+print("Ruta de Windows: C:\\Usuarios\\Juan")
 
 
 #Tambien se pueden usar las funciones de conversión de tipos de datos
 # Convertir a cadena de texto (str) o simplemente definir la variable como texto
 #Aqui se define saludo como texto(string) y se concatena con las variables nombre y apellido
+
+print("\n")
+print("=" * 20)
+print("CONVERSIONES DE TIPOS DE DATOS")
+print("=" * 20)
+print("\n")
 
 saludo = str("Hola, " + nombre + " " + apellido)
 print(saludo)
@@ -234,3 +268,8 @@ print("Decimal a texto:", decimal_a_texto)
 print("Booleano a texto:", booleano_a_texto)
 print("Número a booleano:", numero_a_booleano)
 print("Texto a booleano:", texto_a_booleano)
+
+
+
+
+
