@@ -78,6 +78,10 @@ print("=" * 20)
 print("FUNCIONES ANIDADAS")
 print("=" * 20)
 print("\n")
+#Busca variable en función secundaria, si no la encuentra, la busca en la función principal y 
+#si no la encuentra ahí, la busca en el ámbito global. Si tampoco la encuentra ahí, 
+# mira librerias de python, si tampco la encuentra ahí, da error.
+
 
 def funcion_principal():
     variable = 1  
@@ -87,3 +91,25 @@ def funcion_principal():
     funcion_secundaria()
           
 funcion_principal()  # Imprime: 1
+
+if True:
+    nueva_variable = "Estoy dentro de un bloque if"
+# Imprime: Estoy dentro de un bloque if, la creas local dentro de un if, pero es global
+print(nueva_variable)  
+
+for i in range(3):
+    ultimo_valor = i
+print(ultimo_valor)  # Imprime: 2, la creas local dentro de un for, pero es global
+
+print("\n")
+print("=" * 20)
+print("CONSTANTES")
+print("=" * 20)
+print("\n")
+
+PI = 3.14159
+VELOCIDAD_LUZ = 299792458  # metros por segundo
+DIAS_SEMANA = 7
+GRAVEDAD_TIERRA = 9.8  # m/s²
+USER_DEAULT = "Usuario"
+
