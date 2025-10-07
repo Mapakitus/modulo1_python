@@ -63,3 +63,6 @@ print("=" * 20)
 print("BUCLES WHILE")
 print("=" * 20)
 print("\n")
+#Bucle indeterminado, porque se ejecuta en base a condiciones por lo que
+#no sabemos cuántas veces se va a ejecutar.
+#Ideal para crear aplicaciones de consola (CLI "Command Line Interface" apps.)
