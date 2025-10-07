@@ -97,7 +97,7 @@ print(f"c is d: {c is d}")  # True (Python reutiliza pequeños enteros)
 
 print("\n")
 print("=" * 20)
-print("OPERADORES ARITMÉTICOS")
+print("OPERADORES LÓGICOS")
 print("=" * 20)
 print("\n")
 
