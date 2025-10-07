@@ -96,3 +96,38 @@ while True:
         break
     
 print ("Fuera del bucle")
+
+print("=" * 20)
+print("\n")
+print("BUCLES WHILE CONTINUE")
+print("=" * 20)
+print("\n")
+#El continue hace que se salte el resto del código y vuelva al inicio del bucle
+#Break sale del bucle, continue vuelve al inicio del bucle.
+
+#Imprime número impares.
+numero = 0
+while numero < 10:
+    numero += 1
+    if numero % 2 == 0: #Comprobar si es par, dividir por 2 y el resto es 0
+        continue  # Saltar números pares
+    print(f"Número impar: {numero}")    
+ 
+ 
+print("=" * 20)
+print("\n")
+print("BUCLES WHILE CON LISTAS")
+print("=" * 20)
+print("\n")
+    
+#La función pop() elimina el primer elemento de la lista y lo devuelve.
+# Si ponemos pop(0) elimina el primer elemento, si ponemos pop() sin índice elimina el último.
+#Inicialmente Ana es el elemento [0], tras el pop(0) Ana desaparece y Luis pasa a ser el elemento [0].
+print("=" * 20)
+print("\n")
+nombres = ["Ana", "Luis", "Carlos", "Paco", "Pedro"]
+
+while nombres:
+    nombre = nombres.pop(0)
+    print(nombre)
+    
