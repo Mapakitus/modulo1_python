@@ -80,6 +80,8 @@ print("\n")
 #Ideal para crear aplicaciones de consola (CLI "Command Line Interface" apps.)
 #Bucle infinito, porque la condición siempre es True.
 #Salimos del bucle cuando el usuario escriba "salir"
+#Es indeterminado porque no sabemos cuándo el usuario va a escribir "salir"
+
 while True:
     print("""Welcome to the app
             1. Mostrar Todos los Productos
@@ -89,7 +91,7 @@ while True:
     opcion = input("Introduce una opción:").lower()
     print(f"Has elegido la opción: {opcion}")
         
-    if opcion == "salir":
+    if opcion == "3" or opcion == "salir":
         print("Saliendo de la aplicación...")
         break
     
