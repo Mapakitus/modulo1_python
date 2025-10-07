@@ -66,3 +66,8 @@ print("\n")
 #Bucle indeterminado, porque se ejecuta en base a condiciones por lo que
 #no sabemos cuántas veces se va a ejecutar.
 #Ideal para crear aplicaciones de consola (CLI "Command Line Interface" apps.)
+
+contador = 0
+while contador < 10:
+    print(f"Contador: {contador}")
+    contador += 1  # Incrementar el contador para evitar un bucle infinito
