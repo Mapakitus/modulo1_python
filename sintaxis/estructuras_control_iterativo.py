@@ -71,3 +71,26 @@ contador = 0
 while contador < 10:
     print(f"Contador: {contador}")
     contador += 1  # Incrementar el contador para evitar un bucle infinito
+
+print("=" * 20)
+print("\n")
+print("BUCLES WHILE INFINITO")
+print("=" * 20)
+print("\n")
+#Ideal para crear aplicaciones de consola (CLI "Command Line Interface" apps.)
+#Bucle infinito, porque la condición siempre es True.
+#Salimos del bucle cuando el usuario escriba "salir"
+while True:
+    print("""Welcome to the app
+            1. Mostrar Todos los Productos
+            2. Mostrar un Producto
+            3. Salir - Salir de la aplicación
+            """)
+    opcion = input("Introduce una opción:").lower()
+    print(f"Has elegido la opción: {opcion}")
+        
+    if opcion == "salir":
+        print("Saliendo de la aplicación...")
+        break
+    
+print ("Fuera del bucle")
