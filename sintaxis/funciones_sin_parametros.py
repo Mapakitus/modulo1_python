@@ -37,3 +37,43 @@ def is_adult():
 print(is_adult())  # Llama a la función y muestra el resultado
 print(is_adult())
 print
+
+
+print("\n")
+print("=" * 20)
+print("FUNCIONES CON UN PARÁMETRO")
+print("=" * 20)
+
+nombres = []
+
+def guardar_nombre(nombre):
+    nombres.append(nombre)
+    print(f"Insertado {nombre} en la lista, ahora hay {len(nombres)} nombres.")
+    
+
+guardar_nombre("Patricia")
+guardar_nombre("Jorge")
+guardar_nombre("Pablo")
+
+# ----- 
+
+matriculas = ["1111AAA", "2222BBB", "3333CCC"]
+
+def guardar_matriculas(matriculas_nuevas):
+    matriculas.extend(matriculas_nuevas) # se van a fusionar las listas
+    
+guardar_matriculas(["4444DDD", "5555EEE"])
+guardar_matriculas(["6666FFF", "7777GGG", "8888HHH"])
+
+print(matriculas)
+
+print("\n")
+print("=" * 20)
+print("FUNCIONES CON PARÁMETROS OPCIONALES")
+print("=" * 20)
+
+def saludar(nombre, ciudad='Madrid'):
+    print(f"Hola {nombre} de ciudad {ciudad}")
+    
+saludar("Mike", "Barcelona")
+saludar("Mike")
