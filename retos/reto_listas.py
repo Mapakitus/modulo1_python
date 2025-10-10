@@ -29,6 +29,7 @@ def filtrar_mayores(lista, umbral):
     resultado = []
     
     # TODO: haz aquí el código de la función:
+    resultado = [numero for numero in lista if numero > umbral]
     
     return resultado
 
