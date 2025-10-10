@@ -57,6 +57,22 @@ CRUD: (Create, Read, Update, Delete)
     * index(): Devuelve el índice de la primera aparición de un valor.
         indice = nombres.index("Carlos") (si no existe, lanza ValueError)
    
+* Clonar:
+    * lista_clon = nombres.copy()
+    * lista_clon = nombres[:]
+    * lista_clon = list(nombres)
+
+* Ordenar:
+    * sort(): Ordena la lista en su lugar.
+        nombres.sort() (ordena alfabéticamente)
+    * sorted(): Devuelve una nueva lista ordenada.
+        nombres_ordenados = sorted(nombres) (no modifica la lista original)
+    * reverse(): Invierte el orden de los elementos en la lista.
+        nombres.reverse() (invierte la lista en su lugar)
+
+* count(): Cuenta cuántas veces aparece un elemento en la lista.
+    nombres.count("Luis") (devuelve 2 si "Luis" aparece dos veces)
+
         
     
 """
