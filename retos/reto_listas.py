@@ -37,3 +37,21 @@ def filtrar_mayores(lista, umbral):
 if __name__ == "__main__":
     print(filtrar_mayores([5, 10, 15, 20], 12))  # Debe devolver [15, 20]
     print(filtrar_mayores([1, 2, 3], 5))         # Debe devolver [] (lista vacía)
+    
+    
+    """
+    OTRA FORMA MÁS FÁCIL SIN COMPRENSIÓN
+    
+      resultado = []
+    
+    # Recorremos cada número de la lista
+    for n in lista:
+        # Comprobamos si el número es mayor al umbral
+        if n > umbral:
+            # Si se cumple, se añade a la lista de resultado
+            resultado.append(n)
+    
+    return resultado
+    
+    
+    """
