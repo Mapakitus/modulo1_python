@@ -48,23 +48,25 @@ class Libro:
     # def prestar...
     def prestar(self):
         if self.disponible:
-            print(f"El libro {self.titulo} ha sido prestado ")
             self.disponible = False
+            return f"El libro {self.titulo} ha sido prestado"
         else:
-             print(f"El libro {self.titulo} no está disponible") 
+             return f"El libro {self.titulo} no está disponible" 
          
     # def devolver...
     def devolver(self):
         if self.disponible:
-            print(f"El libro {self.titulo} ya estaba disponible")
+            return f"El libro {self.titulo} ya estaba disponible"
             
         else:
-             print(f"El libro {self.titulo} ha sido devuelto")
-             self.disponible = True 
+            self.disponible = True 
+            return f"El libro {self.titulo} ha sido devuelto"
+             
     
     # def informacion...
     def informacion(self):
-        return self.titulo, self.autor, self.paginas, self.disponible
+        estado = "Disponible" if self.disponible else "No disponible"
+        return f"Título: {self.titulo}\nAutor: {self.autor}\nPáginas: {self.paginas}\nEstado: {estado}"
 
 
 # Prueba de la clase Libro
