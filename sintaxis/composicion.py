@@ -119,4 +119,43 @@ Muchos a muchos (Many to Many):
     Un estudiante pueden tener MUCHAS asignaturas. Cada asignatura puede tener MUCHOS estudiantes.
 """
 
+class Estudiante:
+    def __init__(self, id, nombre, edad):
+        self.id = id
+        self.nombre = nombre
+        self.edad = edad
+        self.asignaturas = [] #Lista de asignaturas
+        
+class Asignatura:
+    def __init__(self, id, nombre, creditos):
+        self.id = id
+        self.nombre = nombre
+        self.creditos = creditos
+        self.estudiantes = [] #Lista de estudiantes
+        
+#Crear tabla intermedia
+class EstudianteAsignatura:
+    def __init__(self, estudiante_id, asignatura_id, nota):
+        self.estudiante = estudiante_id
+        self.asignatura = asignatura_id
+        self.nota = nota
+        
+#Crear los objetos
+estudiante1 = Estudiante(1, "Paco", 47)
+estudiante2 = Estudiante(2, "Ana", 30)
 
+asignatura1 = Asignatura(1, "Matemáticas", 6)
+asignatura2 = Asignatura(2, "Historia", 3)
+
+#Relaciones
+estudiante1.asignaturas = [asignatura1, asignatura2]
+estudiante2.asignaturas = [asignatura1]
+
+asignatura1.estudiantes = [estudiante1, estudiante2]
+asignatura2.estudiantes = [estudiante1]
+
+relaciones = [
+    EstudianteAsignatura(1, 1, 8.5),
+    EstudianteAsignatura(1, 2, 6.0),
+    EstudianteAsignatura(2, 1, 7.5)
+]
