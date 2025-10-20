@@ -243,15 +243,18 @@ print(f"Número de tarjeta: {empleado1.tarjeta.numero}")
 print(f"Fecha de emisión de la tarjeta: {empleado1.tarjeta.fecha_emision}")
 
 print("\n=== RESULTADO FINAL ===")
-# 7. Mostrar un mensaje confirmando la relación one-to-one
-print("\n=== RESULTADO FINAL ===")
-
+print()
 # 7. Verificar la relación one-to-one
+# 7. Mostrar un mensaje confirmando la relación one-to-one
 if empleado1.tarjeta is not None and empleado1.tarjeta.empleado_id == empleado1.id:
     print("✅ Relación one-to-one establecida correctamente.")
     print(f"El empleado {empleado1.nombre} posee la tarjeta {empleado1.tarjeta.numero}.")
 else:
     print("❌ Error: la relación entre empleado y tarjeta no es válida.")
+print("\n=== RESULTADO FINAL ===")
+
+
+
 
 
 
