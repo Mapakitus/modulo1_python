@@ -1,0 +1,1 @@
+print(f"La habitación {habitacion1.numero} pertenece al hotel: {habitacion1.hotel.nombre}")
