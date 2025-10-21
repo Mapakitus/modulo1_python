@@ -77,8 +77,6 @@ carpeta1.archivos.append(archivo2)
 carpeta1.archivos.append(archivo3)
 
 
-
-
 print("=== VERIFICANDO RELACIÓN ===")
 
 # 6. Imprimir información de la carpeta y sus archivos
